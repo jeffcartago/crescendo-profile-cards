@@ -6,18 +6,47 @@
     <title>CDMS Lucena</title>
     <link rel="shortcut icon" href="jira-favicon-scaled.png">
     <style>
-        body{
+        body, html{
+            height: 100%;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+        
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .5)), url("meeting bg.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            min-height: 100vh;
+        }
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            color: gray;
+            font-size: 100px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        @media screen and (max-width:520px) {
+            .hero-text {
+                font-size: 50px;
+            }
+        }
     </style>
 </head>
 <body>
+<!-- CDMS Lucena Hero banner -->    
+    <div class="hero-image">
+        <h1 class="hero-text">CRESCENDO PROFILES</h1>
+    </div>
 
 <!-- CDMS Lucena Profile Cards -->
 
 <iframe src="https://jeffcartago.github.io/frontend-jep/" frameborder="0" style="width: 100%; height: 90vh;"></iframe>
-    <div>boss jeffcartago</div>
 </body>
 </html>
