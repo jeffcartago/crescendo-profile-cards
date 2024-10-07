@@ -2,3 +2,57 @@
 * {
   font-family: "Rubik", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: auto 0;
+}
+.profilesContainer {
+  display: flex;
+  position: fixed;
+  background-color: black;
+  margin: 20px;
+  border-radius: 20px;
+  z-index: 20;
+  display: block;
+}
+.profilesContainer:hover {
+  margin: 0;
+  border-radius: 0;
+}
+
+.profilesContainer:hover svg {
+  display: none;
+}
+.profilesContainer ul {
+  display: none;
+}
+.profilesContainer:hover ul {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 100vh;
+}
+.profilesContainer:hover .profile {
+  padding-top: 20px;
+}
+.profilesContainer:hover ul li {
+  padding: 15px 0 15px 15px;
+}
+.profilesContainer ul li:hover {
+  background-color: white;
+}
+.profilesContainer ul li:hover a {
+  color: black;
+}
+.profilesContainer ul li a:hover {
+  transform: scale(1.1);
+}
